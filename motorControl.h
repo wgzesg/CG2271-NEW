@@ -8,9 +8,9 @@ PTB19 -> TM2 CH1
 
 // #define RB TPM0_C1V // pta4 transfer to buzzer
 #define RB TPM1_C0V // ptb0
-#define RF TPM2_C1V // pta2
+#define RF TPM1_C1V // pta2 change to ptb1
 #define LB TPM2_C0V // pta1
-#define LF TPM1_C1V // ptb1
+#define LF TPM2_C1V // ptb1 change to pta2
 
 
 // #define MUSCIAL_NOTE_CNT 7
