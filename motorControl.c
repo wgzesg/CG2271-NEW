@@ -2,28 +2,28 @@
 #include "common.h"
 
 
-void forward_move() {
+void left_move() {
 	LF = RUNNING;
 	RF = RUNNING;
 	LB = STATIONARY;
 	RB = STATIONARY;
 }
 
-void backward_move() {
+void right_move() {
 	LB = RUNNING;
 	RB = RUNNING;
 	LF = STATIONARY;
 	RF = STATIONARY;
 }
 
-void left_move() {
+void forward_move() {
 	LF = STATIONARY;
 	RF = RUNNING;
 	LB = RUNNING;
 	RB = STATIONARY;
 }
 
-void right_move() {
+void backward_move() {
 	LF = RUNNING;
 	RF = STATIONARY;
 	LB = STATIONARY;
