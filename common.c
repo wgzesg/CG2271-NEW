@@ -50,10 +50,10 @@ void initPWM(void){
 	SIM->SOPT2 |= SIM_SOPT2_TPMSRC(1); // MCGFLLCLK or MCGPLLCLK/2	
 	
 	//Set Modulo Value 20971520/ 128 = 163840 /3276 = 50Hz
-	TPM1->MOD = 7500;
+	TPM1->MOD = 3500;
 	
 	//Set Modulo Value 48000000 /128 = 375000 / 7500 = 50Hz
-	TPM2->MOD = 7500;
+	TPM2->MOD = 3500;
 	
 	TPM0->MOD = 0;
 	

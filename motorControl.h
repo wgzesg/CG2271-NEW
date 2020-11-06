@@ -25,7 +25,7 @@ PTB19 -> TM2 CH1
 #define RIGHT    0x04
 #define STOP     0x00
 
-#define RUNNING     1000
+#define RUNNING     3500
 #define STATIONARY  0
 
 void forward_move(void);
@@ -33,6 +33,9 @@ void backward_move(void);
 void left_move(void);
 void right_move(void);
 void stop_move(void);
+void stop_turning(void);
 
 void main_motor(unsigned char);
+
+
 

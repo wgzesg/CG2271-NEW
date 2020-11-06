@@ -16,6 +16,7 @@
 volatile char data = 0;
 volatile char status = 0;
 volatile char startOrEnd = 0;
+volatile char isMoving = 0;
 
 
 osThreadId_t motorId;
@@ -35,6 +36,7 @@ void motor_thread (void *argument) {
 	for (;;) {
 		osMessageQueueGet(motorMsg, &myRxData, NULL, osWaitForever);
 		if (myRxData.cmd == 0x01) {
+			isMoving = 1;
 			forward_move();
 		} else if (myRxData.cmd == 0x02) {
 			backward_move();
@@ -43,7 +45,10 @@ void motor_thread (void *argument) {
 		} else if (myRxData.cmd == 0x04) {
 			right_move();
 		} else if (myRxData.cmd == 0x00) {
+			isMoving = 0;
 			stop_move();
+		} else if (myRxData.cmd == 0x09) {
+			stop_turning();
 		}
 	}
 }
@@ -63,20 +68,19 @@ void led_thread(void *argument) {
 		} else {
 			int i = 0;
 			int arr[8] = {7, 3, 4,5, 6, 10, 11, 12};
-			data = 0;
 			while(status == 2){
-				if (data == 0) {
+				if (isMoving == 0) {
 					LightUpAllGreenLed();
 					LightUpAllRedLed();
 					for(int j = 0; j <10; j++) {
-						if(data != 0) {
+						if(isMoving != 0) {
 							break;
 						}
 						osDelay(200);
 					}
 					offAllRedLed();
 					for(int j = 0; j <10; j++) {
-						if(data != 0) {
+						if(isMoving != 0) {
 							break;
 						}
 						osDelay(200);
@@ -88,14 +92,14 @@ void led_thread(void *argument) {
 					PTC->PDOR |= MASK(arr[i]);
 					LightUpAllRedLed();
 					for(int j = 0; j <10; j++) {
-						if(data == 0) {
+						if(isMoving == 0) {
 							break;
 						}
 						osDelay(100);
 					}
 					offAllRedLed();
 					for(int j = 0; j <10; j++) {
-						if(data == 0) {
+						if(isMoving == 0) {
 							break;
 						}
 						osDelay(100);
@@ -180,7 +184,7 @@ void UART2_IRQHandler(void) {
 int main (void) {
  
   // System Initialization
-  SystemCoreClockUpdate();
+    SystemCoreClockUpdate();
 	InitUART2(BAUD_RATE);  // Init for UART
 	initPWM(); // Init for motor and buzzer
 	initLedStrip(); // Init for two leds
