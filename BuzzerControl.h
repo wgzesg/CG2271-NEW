@@ -8,6 +8,7 @@ PTB19 -> TM2 CH1
 #define MUSCIAL_NOTE_CNT_JINGLEBELL 22
 #define MUSCIAL_NOTE_CNT_HAPPYBIRTHDAY 50
 #define MUSCIAL_NOTE_CNT_OLDDONALD 14
+#define MUSICAL_NOTE_CNT_BRAWLSTARS_BEGIN 14
 
 #define FREQ_2_MOD(x) (375000 / x)
 #define MASK(x) 				( 1 << (x))
@@ -41,6 +42,7 @@ PTB19 -> TM2 CH1
 #define  a5     880
 #define  b5b    932
 #define  b5     988
+#define  d6     1175 
 //A special note, 'R', to represent a rest
 #define  R      0
 #define beat 200
