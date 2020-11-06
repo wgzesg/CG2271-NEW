@@ -10,10 +10,10 @@ I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cm
 I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2663A6)
 I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2663A6)
 I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5644EF8A)
-I (common.h)(0x5F9B71CB)
+I (common.h)(0x5F9BBB9A)
 I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FEA88)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9BA508)
-F (.\rtx.c)(0x5F9B9DAD)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\rtx.o --omf_browse .\objects\rtx.crf --depend .\objects\rtx.d)
+F (.\rtx.c)(0x5FA4D104)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\rtx.o --omf_browse .\objects\rtx.crf --depend .\objects\rtx.d)
 I (.\RTE\_Target_1\RTE_Components.h)(0x5F9B6BB1)
 I (C:\Users\zesong\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585C4EFA)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9BA508)
@@ -25,11 +25,11 @@ I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5644EF8A)
 I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FEA88)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9BA508)
 I (LedControl.h)(0x5F9B6C50)
-I (common.h)(0x5F9B71CB)
+I (common.h)(0x5F9BBB9A)
 I (UART.h)(0x5F9B6D5E)
-I (motorControl.h)(0x5F9B6D91)
+I (motorControl.h)(0x5FA4CEDC)
 I (BuzzerControl.h)(0x5F9B9B39)
-F (.\common.h)(0x5F9B71CB)()
+F (.\common.h)(0x5F9BBB9A)()
 F (.\BuzzerControl.h)(0x5F9B9B39)()
 F (.\BuzzerControl.c)(0x5F9B7E15)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\buzzercontrol.o --omf_browse .\objects\buzzercontrol.crf --depend .\objects\buzzercontrol.d)
 I (BuzzerControl.h)(0x5F9B9B39)
@@ -42,8 +42,8 @@ I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cm
 I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5644EF8A)
 I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x5C8FEA88)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9BA508)
-F (.\motorControl.c)(0x5F9B6D18)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\motorcontrol.o --omf_browse .\objects\motorcontrol.crf --depend .\objects\motorcontrol.d)
-I (motorControl.h)(0x5F9B6D91)
+F (.\motorControl.c)(0x5FA4D4B0)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\motorcontrol.o --omf_browse .\objects\motorcontrol.crf --depend .\objects\motorcontrol.d)
+I (motorControl.h)(0x5FA4CEDC)
 I (C:\Users\zesong\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585C4EFA)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9BA508)
 I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2663A6)
@@ -51,10 +51,10 @@ I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cm
 I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D2663A6)
 I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D2663A6)
 I (.\RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h)(0x5644EF8A)
-I (common.h)(0x5F9B71CB)
-F (.\motorControl.h)(0x5F9B6D91)()
-F (.\common.c)(0x5F9B7229)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\common.o --omf_browse .\objects\common.crf --depend .\objects\common.d)
-I (common.h)(0x5F9B71CB)
+I (common.h)(0x5F9BBB9A)
+F (.\motorControl.h)(0x5FA4CEDC)()
+F (.\common.c)(0x5FA4B867)(--c99 --gnu -c --cpu Cortex-M0+ -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\CMSIS-I.\RTE\Device\MKL25Z128xxx4-I.\RTE\_Target_1-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\RTOS2\RTX\Include-IC:\Users\zesong\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DMKL25Z128xxx4-o .\objects\common.o --omf_browse .\objects\common.crf --depend .\objects\common.d)
+I (common.h)(0x5F9BBB9A)
 I (C:\Users\zesong\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL25Z4.h)(0x585C4EFA)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9BA508)
 I (C:\Users\zesong\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm0plus.h)(0x5D2663A6)
