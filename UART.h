@@ -10,6 +10,4 @@
 
 #define Q_SIZE (32)
 
-//void InitGPIO(void);
 void InitUART2(uint32_t);
-//void UART_main(void);

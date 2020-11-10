@@ -183,13 +183,13 @@ void UART2_IRQHandler(void) {
 
 int main (void) {
  
-  // System Initialization
-    SystemCoreClockUpdate();
+  
+  SystemCoreClockUpdate();	// System Initialization
 	InitUART2(BAUD_RATE);  // Init for UART
 	initPWM(); // Init for motor and buzzer
 	initLedStrip(); // Init for two leds
 	
-  osKernelInitialize();                 // Initialize CMSIS-RTOSt
+  osKernelInitialize(); // Initialize CMSIS-RTOSt
 	
   motorMsg = osMessageQueueNew(MSG_COUNT, sizeof(myDataPkt), NULL); // msg queue for motor thread
 	
@@ -202,7 +202,7 @@ int main (void) {
 	ledId = osThreadNew(led_thread, NULL, NULL);
 
 	
-  osKernelStart();                      // Start thread execution
+  osKernelStart(); // Start thread execution
   for (;;) {}
 }
 

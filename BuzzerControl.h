@@ -1,10 +1,7 @@
 #include "MKL25Z4.h"						// Device header
 /* Default Core Clk Frequency is 20.97152MHz
 	 #include CLOCK_SETUP 1 in <system_MKL2574.h> to change it to Core Clk Freq to 48MHz */
-/*
-PTB18 -> TM2 CH0
-PTB19 -> TM2 CH1
-*/
+
 #define MUSICAL_NOTE_CNT_JINGLEBELL 22
 #define MUSICAL_NOTE_CNT_HAPPYBIRTHDAY 50
 #define MUSICAL_NOTE_CNT_OLDDONALD 30
@@ -13,7 +10,7 @@ PTB19 -> TM2 CH1
 #define FREQ_2_MOD(x) (375000 / x)
 #define MASK(x) 				( 1 << (x))
 
-// TONES
+//TONES
 //Period = 375,000*(1/frequency)
 //letter=note #=octave b=flat
 //       note,  frequency. 

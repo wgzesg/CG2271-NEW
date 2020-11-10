@@ -11,7 +11,6 @@ void forward_move() {
 	temp_RF = RF = RUNNING;
 	temp_LB = LB = STATIONARY;
 	temp_RB = RB = STATIONARY;
-	
 }
 
 void backward_move() {
@@ -30,8 +29,6 @@ void left_move() {
 	RF = RF;
 	LB = LB * 0;
 	RB = RB;
-	
-	
 }
 
 void right_move() {
@@ -50,7 +47,6 @@ void stop_turning() {
 	RF = temp_RF;
 	LB = temp_LB;
 	RB = temp_RB;
-	
 }
 
 void stop_move() {
@@ -65,14 +61,6 @@ void stop_move() {
 }
 
 void main_motor(unsigned char direction){
-	
-	
-	//TPM1_C0V = 0x0666; // 0x666 = 1638 (half of 3276) 50% Duty Cycle
-	//TPM1_C0V = 0x0EA6; // 0x0EA6 = 3750 (half of 7500) 50% Duty Cycle
-	//TPM0_C1V = 0x0EA6; 
-	//TPM0_C2V = 0x0EA6;
-		
-
 		
 		switch (direction) {
 			case FORWARD: 

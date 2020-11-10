@@ -84,21 +84,6 @@ void stationaryLed() {
 	}
 }
 
-void runningLed() {
-	int arr[8] = {7, 3, 4, 5, 6, 10, 11, 12};
-	int i = 0;
-	while(1) {
-		PTC->PDOR &= ~MASK(arr[i]);
-		i += 1;
-		i %= 8;
-		PTC->PDOR |= MASK(arr[i]);
-		LightUpAllRedLed();
-		osDelay(1000);
-		offAllRedLed();
-		osDelay(1000);
-	}
-}
-
 void BlinkAllGreenLed() {
 	for(int i = 0; i < 3; i++){
 		LightUpAllGreenLed();

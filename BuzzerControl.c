@@ -24,23 +24,6 @@ int duration_brawl_stars_begin[MUSICAL_NOTE_CNT_BRAWLSTARS_BEGIN] = {
 	beat,pause,beat,pause,beat,pause,beat,pause*2,
 	beat,pause,beat,pause,beat,pause*2
 };
-
- 
-/* 
-  int score_happy_birthday[MUSCIAL_NOTE_CNT_HAPPYBIRTHDAY] = {
-	 g4,R,g4,R,a5,R,g4,R,c5,R,b5,R,
-	 g4,R,g4,R,a5,R,g4,R,d5,R,c5,R,
-	 g4,R,g4,R,g4,R,e4,R,c4,R,b4,R,a4,R,
-	 f5,R,f5,R,e5,R,c5,R,d5,R,c5,R
- };
- 
- int duration_happy_birthday[MUSCIAL_NOTE_CNT_HAPPYBIRTHDAY] = {
-	 beat/2,pause,beat/2,pause,beat,pause,beat,pause,beat,pause,beat*2,pause,
-	 beat/2,pause,beat/2,pause,beat,pause,beat,pause,beat,pause,beat*2,pause,
-	 beat/2,pause,beat/2,pause,beat,pause,beat,pause,beat,pause,beat*2,pause,beat,pause,
-	 beat/2,pause,beat/2,pause,beat,pause,beat,pause,beat,pause,beat*2,pause
- };
-*/
  
  int score_old_donald[MUSICAL_NOTE_CNT_OLDDONALD] = {
 	 g4,R,g4,R,g4,R,d4,R,
@@ -79,9 +62,6 @@ void main_buzzer(char i, char song){
 	
 	switch(song) {
 		case 1:
-			// TPM0->MOD = FREQ_2_MOD(score_jingle_bell[i]);
-			// TPM0_C2V = (FREQ_2_MOD(score_jingle_bell[i]))/10;
-			// osDelay(duration_jingle_bell[i]);
 			TPM0->MOD = FREQ_2_MOD(score_brawl_stars_begin[i]);
 			TPM0_C2V = (FREQ_2_MOD(score_brawl_stars_begin[i]))/10;
 			osDelay(duration_brawl_stars_begin[i]);
