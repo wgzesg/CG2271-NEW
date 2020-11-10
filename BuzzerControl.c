@@ -1,7 +1,7 @@
 #include "BuzzerControl.h"						// Device header
 #include "cmsis_os2.h"
 
-int score_jingle_bell[MUSCIAL_NOTE_CNT_JINGLEBELL] = {
+int score_jingle_bell[MUSICAL_NOTE_CNT_JINGLEBELL] = {
  e4,R,e4,R,e4,R,
  e4,R,e4,R,e4,R,
  e4,R,g4,R,c4,R,d4,R,
@@ -9,7 +9,7 @@ int score_jingle_bell[MUSCIAL_NOTE_CNT_JINGLEBELL] = {
  };
  
 
- int duration_jingle_bell[MUSCIAL_NOTE_CNT_JINGLEBELL] = {
+ int duration_jingle_bell[MUSICAL_NOTE_CNT_JINGLEBELL] = {
 	 beat,pause, beat,pause, beat*2, pause,
    beat,pause, beat,pause, beat*2, pause,
    beat,pause, beat,pause, beat*1.5,pause, beat/2, pause,
@@ -18,12 +18,12 @@ int score_jingle_bell[MUSCIAL_NOTE_CNT_JINGLEBELL] = {
 
 int score_brawl_stars_begin[MUSICAL_NOTE_CNT_BRAWLSTARS_BEGIN] = {
 	b5,R,a5,R,b5,R,d6,R,g5b,R,a5,R,b5,R 
-}
+};
 
 int duration_brawl_stars_begin[MUSICAL_NOTE_CNT_BRAWLSTARS_BEGIN] = {
 	beat,pause,beat,pause,beat,pause,beat,pause*2,
-	beat,pause,beat,pause,beat,pause*2,
-}
+	beat,pause,beat,pause,beat,pause*2
+};
 
  
 /* 
@@ -42,25 +42,25 @@ int duration_brawl_stars_begin[MUSICAL_NOTE_CNT_BRAWLSTARS_BEGIN] = {
  };
 */
  
- int score_old_donald[MUSCIAL_NOTE_CNT_OLDDONALD] = {
+ int score_old_donald[MUSICAL_NOTE_CNT_OLDDONALD] = {
 	 g4,R,g4,R,g4,R,d4,R,
 	 e4,R,e4,R,d4,R,b4,R,b4,R,a4,R,a4,R,g4,R
  };
  
- int duration_old_donald[MUSCIAL_NOTE_CNT_OLDDONALD] = {
+ int duration_old_donald[MUSICAL_NOTE_CNT_OLDDONALD] = {
 	 beat,pause,beat,pause, beat,pause,beat,pause,
 	 beat,pause,beat,pause,beat*2,pause, 
 	 beat,pause,beat,pause,beat,pause,beat,pause,beat,pause,
  };
  
- int score_happy_birthday[MUSCIAL_NOTE_CNT_HAPPYBIRTHDAY] = {
+ int score_happy_birthday[MUSICAL_NOTE_CNT_HAPPYBIRTHDAY] = {
 	 g4,R,g4,R,a5,R,g4,R,c5,R,b5,R,
 	 g4,R,g4,R,a5,R,g4,R,d5,R,c5,R,
 	 g4,R,g4,R,g4,R,e4,R,c4,R,b4,R,a4,R,
 	 f5,R,f5,R,e5,R,c5,R,d5,R,c5,R
  };
  
- int duration_happy_birthday[MUSCIAL_NOTE_CNT_HAPPYBIRTHDAY] = {
+ int duration_happy_birthday[MUSICAL_NOTE_CNT_HAPPYBIRTHDAY] = {
 	 beat/2,pause,beat/2,pause,beat,pause,beat,pause,beat,pause,beat*2,pause,
 	 beat/2,pause,beat/2,pause,beat,pause,beat,pause,beat,pause,beat*2,pause,
 	 beat/2,pause,beat/2,pause,beat,pause,beat,pause,beat,pause,beat*2,pause,beat,pause,

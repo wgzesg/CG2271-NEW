@@ -78,7 +78,7 @@ void stationaryLed() {
 	LightUpAllGreenLed();
 	while(1) {
 		LightUpAllRedLed();
-		osDelay(2000);
+		osDelay(2000); // 500ms
 		offAllRedLed();
 		osDelay(2000);
 	}

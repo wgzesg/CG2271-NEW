@@ -72,18 +72,18 @@ void led_thread(void *argument) {
 				if (isMoving == 0) {
 					LightUpAllGreenLed();
 					LightUpAllRedLed();
-					for(int j = 0; j <10; j++) {
+					for(int j = 0; j < 5; j++) { // 250ms
 						if(isMoving != 0) {
 							break;
 						}
-						osDelay(200);
+						osDelay(50);
 					}
 					offAllRedLed();
-					for(int j = 0; j <10; j++) {
+					for(int j = 0; j < 5; j++) {
 						if(isMoving != 0) {
 							break;
 						}
-						osDelay(200);
+						osDelay(50);
 					}
 				} else {
 					offAllGreenLed();
@@ -91,18 +91,18 @@ void led_thread(void *argument) {
 					i %= 8;
 					PTC->PDOR |= MASK(arr[i]);
 					LightUpAllRedLed();
-					for(int j = 0; j <10; j++) {
+					for(int j = 0; j < 10; j++) { // 500ms
 						if(isMoving == 0) {
 							break;
 						}
-						osDelay(100);
+						osDelay(50);
 					}
 					offAllRedLed();
-					for(int j = 0; j <10; j++) {
+					for(int j = 0; j < 10; j++) { //500ms
 						if(isMoving == 0) {
 							break;
 						}
-						osDelay(100);
+						osDelay(50);
 					}
 				}
 			}
@@ -146,13 +146,13 @@ void buzzer_thread (void *argument) {
 		int flag = osThreadFlagsWait(0x0111, osFlagsWaitAny, osWaitForever);
 		if (flag == 0x00000001) {
 			// connect routine
-			for(int i = 0; i <MUSCIAL_NOTE_CNT_JINGLEBELL; i++) {
+			for(int i = 0; i <MUSICAL_NOTE_CNT_BRAWLSTARS_BEGIN; i++) {
 				main_buzzer(i, 1);
 			}
 			main_buzzer(0, 0);
 		} else if (flag == 0x00000010) {
 			// End routine
-			for(int i = 0; i <MUSCIAL_NOTE_CNT_OLDDONALD; i++) {
+			for(int i = 0; i <MUSICAL_NOTE_CNT_OLDDONALD; i++) {
 					main_buzzer(i, 3);
 			}
 			main_buzzer(0, 0);
@@ -161,7 +161,7 @@ void buzzer_thread (void *argument) {
 			while(status == 2) {
 				main_buzzer(i, 2);
 				i++;
-				i = i % MUSCIAL_NOTE_CNT_HAPPYBIRTHDAY;
+				i = i % MUSICAL_NOTE_CNT_JINGLEBELL;
 			}
 			main_buzzer(0, 0);
 		}
